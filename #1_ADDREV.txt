@@ -1,0 +1,26 @@
+
+
+ ios_base::sync_with_stdio(0);
+    cin.tie(0);
+// USED TO REMOVE TLE WHEN CIN IS USED
+
+
+#include <iostream>
+using namespace std;
+int reverse(int n) {
+	int r,rev=0;
+       while(n>0)
+       {   r= n%10;
+       rev= rev*10+r;
+       n/=10;
+    }
+return rev;}
+int main() 
+{
+int n,i,a,b;
+cin>>n;
+for(i=0;i<n;i++)
+{scanf("%d %d", &a, &b);
+		printf("%d\n", reverse( reverse(a) + reverse(b) ) );
+}	return 0;
+}

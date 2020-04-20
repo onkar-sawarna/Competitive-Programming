@@ -1,0 +1,32 @@
+GIVEN:
+A*x-B*y = 0
+KEY :
+A*x = B*y = L.C.M(A,B) ; because in the question minimum possible number has been asked.
+
+
+#include<iostream>
+using namespace std;
+long long int gcd(long long int a,long long int b)
+{   if(b>a)
+      return gcd(b,a);
+    if(b==0)
+        return a;
+    else
+        return gcd(b,a%b);
+}
+int main()
+{
+    long long int t,a,b;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a>>b;
+        if(a==b)
+            cout << "1 1\n";
+        else
+        {
+            cout <<b/gcd(a,b)<<" " <<a/gcd(a,b)<<endl;
+        }
+    }
+    return 0;
+}
