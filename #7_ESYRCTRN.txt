@@ -1,0 +1,24 @@
+SPOJ Problem ESYRCRTN
+EASY RECURSION
+Explanation:
+
+Problem requires to find out the sum of F(1) + F(2) + ... + F(n). Before you go for the solution, I would suggest you to find out the values from 1 to 12, and you will have the result.
+
+Solution:
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+typedef long long int LLD;
+
+int main(){
+    LLD t, n;
+    int arr[] = {1, 4, 6, 5, 2, 0};
+    scanf("%lld", &t);
+    while(t--){
+        scanf("%lld", &n);
+        printf("%d\n", arr[(n-1) % 6]);
+    }
+    return 0;
+}

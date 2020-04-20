@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+ double p;
+ int t,n;
+ cin>>t;
+ while(t--)
+ {cin>>n;
+ p=(double)n/(n+1);
+     printf("%0.8f\n",p);
+ }
+	return 0;
+}

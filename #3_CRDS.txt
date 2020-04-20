@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+#define MOD 1000007
+int main() {
+int t;
+long long n,result;
+cin>>t;
+while(t--)
+{result=0;
+cin>>n;
+for(int i=1;i<n;i++)
+{result+=(i+(i*2));}
+result+=(n*2);
+cout<<(result % MOD)<<endl;
+}return 0;
+}
