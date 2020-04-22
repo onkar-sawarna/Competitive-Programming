@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int squares,n;
+	int k=0;
+	while(1)
+	{cin>>n;
+	squares=0;
+	if(n == 0)
+	{k=1;
+	break;}
+	if(k != 1)
+	{ for(int i=1;i<=n;i++)
+	    {squares+=(i*i);}
+	    cout<<squares<<endl;
+	}}
+	
+	return 0;
+}

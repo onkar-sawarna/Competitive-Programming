@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int t;
+	cin>>t;
+	while(t--){
+		int avg,x;
+		cin>>x>>avg;
+
+		int terms = avg - x;
+
+		int sum = terms * (avg + 1);
+
+		int ans = sum - ((terms-1)*(terms)/2);
+
+		cout<<ans<<"\n";
+	}
+
+    return 0;
+}
